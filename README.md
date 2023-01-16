@@ -5,3 +5,4 @@ El lenguaje de programación que se usara es el C# y como base de datos será SQ
 
 Proyecto desarrollado en conjunto
 --Diego Alexander Arroyo Noe
+##Kevin Andres Riguera Juanez
