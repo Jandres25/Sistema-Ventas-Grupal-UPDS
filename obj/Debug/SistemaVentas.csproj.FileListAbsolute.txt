@@ -37,3 +37,42 @@ C:\Sistemas de Informacion\SistemaVentas\bin\Debug\System.Data.SQLite.xml
 C:\Sistemas de Informacion\SistemaVentas\obj\Debug\SistemaVentas.frmConexionSQLite.resources
 C:\Sistemas de Informacion\SistemaVentas\bin\Debug\CapaNegocio.dll
 C:\Sistemas de Informacion\SistemaVentas\bin\Debug\CapaNegocio.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\SistemaVentas.exe.config
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\SistemaVentas.exe
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\SistemaVentas.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\CapaEntidad.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\CapaNegocio.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\EntityFramework.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\EntityFramework.SqlServer.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\FontAwesome.Sharp.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\System.Data.SQLite.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\System.Data.SQLite.EF6.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\System.Data.SQLite.Linq.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\CapaDatos.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\CapaEntidad.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\CapaNegocio.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\EntityFramework.xml
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\EntityFramework.SqlServer.xml
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\System.Data.SQLite.xml
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\bin\Debug\CapaDatos.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.csproj.AssemblyReference.cache
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.csproj.SuggestedBindingRedirects.cache
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmCategoria.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmClientes.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmCompras.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmConexionSQLite.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmDetalleCompra.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmDetalleVenta.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmProducto.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmProveedores.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmReportes.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmUsuario.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmVentas.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\CapaPresentacion.Inicio.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\CapaPresentacion.Login.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.Properties.Resources.resources
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.csproj.GenerateResource.cache
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.csproj.CoreCompileInputs.cache
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.csproj.CopyComplete
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.exe
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.pdb
