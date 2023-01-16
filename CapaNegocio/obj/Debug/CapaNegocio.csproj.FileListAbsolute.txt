@@ -9,6 +9,7 @@ C:\Sistemas de Informacion\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.cspro
 C:\Sistemas de Informacion\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Sistemas de Informacion\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Sistemas de Informacion\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+<<<<<<< HEAD
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaNegocio.dll
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaNegocio.pdb
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaDatos.dll
@@ -20,3 +21,16 @@ C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.csp
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.pdb
+=======
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaNegocio\obj\Debug\CapaNegocio.pdb
+>>>>>>> 6a9f451bf77505ef772933c8cde10db8fd0a0caf
