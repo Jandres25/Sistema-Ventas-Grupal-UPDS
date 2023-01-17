@@ -18,6 +18,7 @@ namespace CapaPresentacion
         public Login()
         {
             InitializeComponent();
+            //Modificado
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
