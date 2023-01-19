@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CapaNegocio"
   ],
-  "SelectedNode": "\\Login.cs",
+  "SelectedNode": "\\CapaNegocio\\CN_Permiso.cs",
   "PreviewInSolutionExplorer": false
 }
