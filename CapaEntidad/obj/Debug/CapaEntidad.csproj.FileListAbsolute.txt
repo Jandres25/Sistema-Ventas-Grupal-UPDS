@@ -4,3 +4,9 @@ C:\Sistemas de Informacion\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.cspro
 C:\Sistemas de Informacion\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Sistemas de Informacion\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Sistemas de Informacion\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\laragon\www\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.pdb

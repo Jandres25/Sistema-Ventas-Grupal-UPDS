@@ -116,5 +116,23 @@ namespace CapaPresentacion
         {
             AbrirFormulario((IconMenuItem)sender, new frmReportes());
         }
+
+        private void menuacercade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea salir","Mensaje",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }
