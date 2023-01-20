@@ -122,6 +122,7 @@
             this.btnguardar.TabIndex = 73;
             this.btnguardar.Text = "Guardar";
             this.btnguardar.UseVisualStyleBackColor = false;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // label8
             // 
@@ -354,7 +355,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(801, 416);
+            this.dgvdata.Size = new System.Drawing.Size(833, 416);
             this.dgvdata.TabIndex = 77;
             // 
             // btnseleccionar
@@ -466,7 +467,7 @@
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dgvdata);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmProducto";
             this.Text = "frmProducto";
             this.Load += new System.EventHandler(this.frmProducto_Load);

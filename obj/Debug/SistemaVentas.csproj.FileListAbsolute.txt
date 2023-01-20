@@ -118,3 +118,4 @@ C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.csproj.CopyCom
 C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.exe
 C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.pdb
 >>>>>>> 6a9f451bf77505ef772933c8cde10db8fd0a0caf
+C:\clons_github\Sistema-Ventas-Grupal-UPDS\obj\Debug\CapaPresentacion.frmUsuario.resources

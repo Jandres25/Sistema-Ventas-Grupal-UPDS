@@ -8,6 +8,8 @@ namespace CapaEntidad
 {
     public class Usuario
     {
+        public bool estado;
+
         public int IdUsuario { get; set; }
         public string Documento { get; set; }
         public string NombreCompleto { get; set; }

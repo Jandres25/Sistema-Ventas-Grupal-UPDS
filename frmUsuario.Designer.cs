@@ -1,4 +1,4 @@
-﻿namespace SistemaVentas
+﻿namespace CapaPresentacion
 {
     partial class frmUsuario
     {
