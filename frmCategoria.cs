@@ -42,11 +42,11 @@ namespace SistemaVentas
                     ((OpcionCombo)cboestado.SelectedItem).Texto.ToString()
                     });
 
-                    limpiar();
+                    Limpiar();
                 }
                 else
                 {
-                    MessageBox.Show(mensaje);
+                    MessageBox.Show(mensaje,"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             // EDITAR
@@ -62,11 +62,11 @@ namespace SistemaVentas
                     row.Cells["EstadoValor"].Value = ((OpcionCombo)cboestado.SelectedItem).Valor.ToString();
                     row.Cells["Estado"].Value = ((OpcionCombo)cboestado.SelectedItem).Texto.ToString();
 
-                    limpiar();
+                    Limpiar();
                 }
                 else
                 {
-                    MessageBox.Show(mensaje);
+                    MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -103,7 +103,7 @@ namespace SistemaVentas
             }
         }
 
-        private void limpiar()
+        private void Limpiar()
         {
             txtindice.Text = "-1";
             txtid.Text = "0";
@@ -141,7 +141,6 @@ namespace SistemaVentas
 
         private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            /*
             if (e.RowIndex < 0)
                 return;
 
@@ -157,7 +156,6 @@ namespace SistemaVentas
                 e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
-            */
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -177,6 +175,7 @@ namespace SistemaVentas
                     if (respuesta)
                     {
                         dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
+                        Limpiar();
                     }
                     else
                     {
@@ -213,6 +212,11 @@ namespace SistemaVentas
             {
                 row.Visible = true;
             }
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }
