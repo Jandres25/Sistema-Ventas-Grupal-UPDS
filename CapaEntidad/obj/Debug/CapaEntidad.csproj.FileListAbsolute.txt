@@ -16,3 +16,9 @@ C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.csp
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\laragon\Sistema-Ventas-Grupal-UPDS\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\laragon\Sistema-Ventas-Grupal-UPDS\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\laragon\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\laragon\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\laragon\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\laragon\Sistema-Ventas-Grupal-UPDS\CapaEntidad\obj\Debug\CapaEntidad.pdb
