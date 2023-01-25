@@ -68,7 +68,7 @@
             this.menu.Location = new System.Drawing.Point(0, 83);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(963, 73);
+            this.menu.Size = new System.Drawing.Size(1059, 73);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -267,7 +267,7 @@
             this.menuTitulo.Name = "menuTitulo";
             this.menuTitulo.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuTitulo.Size = new System.Drawing.Size(963, 83);
+            this.menuTitulo.Size = new System.Drawing.Size(1059, 83);
             this.menuTitulo.TabIndex = 1;
             this.menuTitulo.Text = "menuStrip1";
             // 
@@ -287,9 +287,9 @@
             // 
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 156);
-            this.contenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(2);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(963, 515);
+            this.contenedor.Size = new System.Drawing.Size(1059, 561);
             this.contenedor.TabIndex = 3;
             // 
             // label2
@@ -338,7 +338,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 671);
+            this.ClientSize = new System.Drawing.Size(1059, 717);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.label2);
@@ -348,7 +348,7 @@
             this.Controls.Add(this.menuTitulo);
             this.ForeColor = System.Drawing.Color.White;
             this.MainMenuStrip = this.menu;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cafeteria";

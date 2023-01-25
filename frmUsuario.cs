@@ -179,49 +179,6 @@ namespace CapaPresentacion
             }
         }
 
-        private void frmUsuario_Load(object sender, EventArgs e)
-        {
-            cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
-            cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
-            cboestado.DisplayMember = "Texto";
-            cboestado.ValueMember = "Valor";
-            cboestado.SelectedIndex = 0;
-
-            List<Rol> listaRol = new CN_Rol().listar();
-
-            foreach (Rol item in listaRol)
-            {
-                cborol.Items.Add(new OpcionCombo() { Valor = item.IdRol, Texto = item.Descripcion });
-            }
-            cborol.DisplayMember = "Texto";
-            cborol.ValueMember = "Valor";
-            cborol.SelectedIndex = 0;
-
-            foreach (DataGridViewColumn columna in dgvdata.Columns)
-            {
-                if (columna.Visible == true && columna.Name != "btnseleccionar")
-                {
-                    cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
-                }
-            }
-            cbobusqueda.DisplayMember = "Texto";
-            cbobusqueda.ValueMember = "Valor";
-            cbobusqueda.SelectedIndex = 0;
-
-            //muestra todos los usuarios
-            List<Usuario> listaUsuario = new CN_Usuario().listar();
-
-            foreach (Usuario item in listaUsuario)
-            {
-                dgvdata.Rows.Add(new object[] {"", item.IdUsuario, item.Documento, item.NombreCompleto, item.Correo, item.Clave,
-                item.oRol.IdRol,
-                item.oRol.Descripcion,
-                item.estado == true ? 1 : 0,
-                item.estado == true ? "Activo" : "No Activo"
-                });
-            }
-        }
-
         private void txtid_TextChanged(object sender, EventArgs e)
         {
 
@@ -299,6 +256,59 @@ namespace CapaPresentacion
                     }
                 }
             }
+        }
+
+        private void frmUsuario_Load_1(object sender, EventArgs e)
+        {
+            cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
+            cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
+            cboestado.DisplayMember = "Texto";
+            cboestado.ValueMember = "Valor";
+            cboestado.SelectedIndex = 0;
+
+            List<Rol> listaRol = new CN_Rol().listar();
+
+            foreach (Rol item in listaRol)
+            {
+                cborol.Items.Add(new OpcionCombo() { Valor = item.IdRol, Texto = item.Descripcion });
+            }
+            cborol.DisplayMember = "Texto";
+            cborol.ValueMember = "Valor";
+            cborol.SelectedIndex = 0;
+
+            foreach (DataGridViewColumn columna in dgvdata.Columns)
+            {
+                if (columna.Visible == true && columna.Name != "btnseleccionar")
+                {
+                    cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
+                }
+            }
+            cbobusqueda.DisplayMember = "Texto";
+            cbobusqueda.ValueMember = "Valor";
+            cbobusqueda.SelectedIndex = 0;
+
+            //muestra todos los usuarios
+            List<Usuario> listaUsuario = new CN_Usuario().listar();
+
+            foreach (Usuario item in listaUsuario)
+            {
+                dgvdata.Rows.Add(new object[] {"", item.IdUsuario, item.Documento, item.NombreCompleto, item.Correo, item.Clave,
+                item.oRol.IdRol,
+                item.oRol.Descripcion,
+                item.estado == true ? 1 : 0,
+                item.estado == true ? "Activo" : "No Activo"
+                });
+            }
+        }
+
+        private void cborol_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btneliminar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
