@@ -153,31 +153,31 @@ namespace CapaPresentacion
             txtdocumento.Select();
         }
 
-        private void btneliminar_Click(object sender, EventArgs e)
-        {
-            if (Convert.ToInt32(txtid.Text) != 0)
-            {
-                if (MessageBox.Show("Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    string mensaje = string.Empty;
-                    Usuario objusuario = new Usuario()
-                    {
-                        IdUsuario = Convert.ToInt32(txtid.Text)
-                    };
+        //private void btneliminar_Click(object sender, EventArgs e)
+        //{
+        //    if (Convert.ToInt32(txtid.Text) != 0)
+        //    {
+        //        if (MessageBox.Show("Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+        //        {
+        //            string mensaje = string.Empty;
+        //            Usuario objusuario = new Usuario()
+        //            {
+        //                IdUsuario = Convert.ToInt32(txtid.Text)
+        //            };
 
-                    bool respuesta = new CN_Usuario().Eliminar(objusuario, out mensaje);
+        //            bool respuesta = new CN_Usuario().Eliminar(objusuario, out mensaje);
 
-                    if (respuesta)
-                    {
-                        dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
-                    }
-                    else
-                    {
-                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-                }
-            }
-        }
+        //            if (respuesta)
+        //            {
+        //                dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
+        //            }
+        //            else
+        //            {
+        //                MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        //            }
+        //        }
+        //    }
+        //}
 
         private void txtid_TextChanged(object sender, EventArgs e)
         {
@@ -229,34 +229,34 @@ namespace CapaPresentacion
 
         }
 
-        private void btnlimpiarbuscador_Click(object sender, EventArgs e)
-        {
-            txtbusqueda.Text = "";
-            foreach (DataGridViewRow row in dgvdata.Rows)
-            {
-                row.Visible = true;
-            }
-        }
+        //private void btnlimpiarbuscador_Click(object sender, EventArgs e)
+        //{
+        //    txtbusqueda.Text = "";
+        //    foreach (DataGridViewRow row in dgvdata.Rows)
+        //    {
+        //        row.Visible = true;
+        //    }
+        //}
 
-        private void btnbuscar_Click(object sender, EventArgs e)
-        {
-            string columnafiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
+        //private void btnbuscar_Click(object sender, EventArgs e)
+        //{
+        //    string columnafiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
 
-            if (dgvdata.Rows.Count > 0)
-            {
-                foreach (DataGridViewRow row in dgvdata.Rows)
-                {
-                    if (row.Cells[columnafiltro].Value.ToString().Trim().ToUpper().Contains(txtbusqueda.Text.Trim().ToUpper()))
-                    {
-                        row.Visible = true;
-                    }
-                    else
-                    {
-                        row.Visible = false;
-                    }
-                }
-            }
-        }
+        //    if (dgvdata.Rows.Count > 0)
+        //    {
+        //        foreach (DataGridViewRow row in dgvdata.Rows)
+        //        {
+        //            if (row.Cells[columnafiltro].Value.ToString().Trim().ToUpper().Contains(txtbusqueda.Text.Trim().ToUpper()))
+        //            {
+        //                row.Visible = true;
+        //            }
+        //            else
+        //            {
+        //                row.Visible = false;
+        //            }
+        //        }
+        //    }
+        //}
 
         private void frmUsuario_Load_1(object sender, EventArgs e)
         {
@@ -308,7 +308,62 @@ namespace CapaPresentacion
 
         private void btneliminar_Click_1(object sender, EventArgs e)
         {
+            if (Convert.ToInt32(txtid.Text) != 0)
+            {
+                if (MessageBox.Show("Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    string mensaje = string.Empty;
+                    Usuario objusuario = new Usuario()
+                    {
+                        IdUsuario = Convert.ToInt32(txtid.Text)
+                    };
 
+                    bool respuesta = new CN_Usuario().Eliminar(objusuario, out mensaje);
+
+                    if (respuesta)
+                    {
+                        dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+            }
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        private void btnbuscar_Click_1(object sender, EventArgs e)
+        {
+            string columnafiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
+
+            if (dgvdata.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dgvdata.Rows)
+                {
+                    if (row.Cells[columnafiltro].Value.ToString().Trim().ToUpper().Contains(txtbusqueda.Text.Trim().ToUpper()))
+                    {
+                        row.Visible = true;
+                    }
+                    else
+                    {
+                        row.Visible = false;
+                    }
+                }
+            }
+        }
+
+        private void btnlimpiarbuscador_Click_1(object sender, EventArgs e)
+        {
+            txtbusqueda.Text = "";
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                row.Visible = true;
+            }
         }
     }
 }

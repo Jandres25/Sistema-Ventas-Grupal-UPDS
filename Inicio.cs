@@ -134,5 +134,10 @@ namespace CapaPresentacion
                 this.Close();
             }
         }
+
+        private void contenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
