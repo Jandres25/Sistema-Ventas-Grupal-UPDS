@@ -197,3 +197,4 @@ C:\laragon\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.csproj.CoreCompile
 C:\laragon\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.csproj.CopyComplete
 C:\laragon\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.exe
 C:\laragon\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.pdb
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmNegocio.resources
