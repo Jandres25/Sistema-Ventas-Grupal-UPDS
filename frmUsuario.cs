@@ -366,23 +366,23 @@ namespace CapaPresentacion
             }
         }
 
-        //private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
-        //{
-        //    if (e.RowIndex < 0)
-        //        return;
+        private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
 
-        //    if (e.ColumnIndex == 0)
-        //    {
-        //        e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+            if (e.ColumnIndex == 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
-        //        var w = Properties.Resources.check20.Width;
-        //        var h = Properties.Resources.check20.Height;
-        //        var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
-        //        var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
+                var w = SistemaVentas.Properties.Resources.check20.Width;
+                var h = SistemaVentas.Properties.Resources.check20.Height;
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
+                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
-        //        e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x, y, w, h));
-        //        e.Handled = true;
-        //    }
-        //}
+                e.Graphics.DrawImage(SistemaVentas.Properties.Resources.check20, new Rectangle(x, y, w, h));
+                e.Handled = true;
+            }
+        }
     }
 }

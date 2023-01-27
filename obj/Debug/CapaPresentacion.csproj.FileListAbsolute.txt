@@ -79,3 +79,4 @@ C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\CapaPresentacion.csproj.Copy
 C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.exe
 C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.pdb
 C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.FrmAcercade.resources
+C:\clons_github\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.FrmAcercade.resources
