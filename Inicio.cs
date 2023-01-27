@@ -119,7 +119,8 @@ namespace CapaPresentacion
 
         private void menuacercade_Click(object sender, EventArgs e)
         {
-
+            FrmAcercade form = new FrmAcercade();
+            form.ShowDialog();
         }
 
         private void label2_Click(object sender, EventArgs e)
