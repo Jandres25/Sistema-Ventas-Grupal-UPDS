@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaPresentacion.Utilidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,25 @@ namespace SistemaVentas
 {
     public partial class frmCompras : Form
     {
-        public frmCompras()
+        private Usuario _Usuario;
+        public frmCompras(Usuario ousuario = null)
         {
+            _Usuario = ousuario;
             InitializeComponent();
+        }
+
+        private void frmCompras_Load(object sender, EventArgs e)
+        {
+            cbotipodocumento.Items.Add(new OpcionCombo() { Valor = "Boleta", Texto = "Boleta" });
+            cbotipodocumento.Items.Add(new OpcionCombo() { Valor = "Factura", Texto = "Factura" });
+            cbotipodocumento.DisplayMember = "Texto";
+            cbotipodocumento.ValueMember = "Valor";
+            cbotipodocumento.SelectedIndex = 0;
+
+            txtfecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            txtidproveedor.Text = "0";
+            txtidproducto.Text = "0";
         }
     }
 }
