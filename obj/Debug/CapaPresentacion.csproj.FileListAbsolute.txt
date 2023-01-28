@@ -124,3 +124,5 @@ C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.pdb
 C:\laragon\www\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.FrmAcercade.resources
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.FrmAcercade.resources
 >>>>>>> 110d004d0f53ddab990b3b75d67ce1e25f435a2e
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.FrmAcercade.resources
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.Modales.mdProducto.resources

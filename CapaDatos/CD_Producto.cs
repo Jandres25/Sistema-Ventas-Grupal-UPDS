@@ -77,7 +77,7 @@ namespace CapaDatos
                     oconexion.Open();
                     cmd.ExecuteNonQuery();
 
-                    idProductogenerado = Convert.ToInt32(cmd.Parameters["IdProductoResultado"].Value);
+                    idProductogenerado = Convert.ToInt32(cmd.Parameters["Resultado"].Value);
                     Mensaje = cmd.Parameters["Mensaje"].Value.ToString();
                 }
             }
