@@ -9,19 +9,18 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    public  class CD_Producto
+    public class CD_Proveedor
     {
-        public List<Producto> Listar()
+        public List<Proveedor> Listar()
         {
-            List<Producto> lista = new List<Producto>();
+            List<Proveedor> lista = new List<Proveedor>();
 
             using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
             {
                 try
                 {
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine("select IdProducto,Codigo,Nombre,p.Descripcion,c.IdCategoria,c.Descripcion[DescripcionCategoria],Stock,PrecioCompra,PrecioVenta,p.Estado from PRODUCTO p");
-                    query.AppendLine("inner join CATEGORIA c on c.IdCategoria = p.IdCategoria");
+                    query.AppendLine("select IdProveedor, Documento, RazonSocial, Correo, Telefono, Estado from PROVEEDOR");
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
                     cmd.CommandType = CommandType.Text;
@@ -31,32 +30,29 @@ namespace CapaDatos
                     {
                         while (dr.Read())
                         {
-                            lista.Add(new Producto()
+                            lista.Add(new Proveedor()
                             {
-                                IdProducto = Convert.ToInt32(dr["IdProducto"]),
-                                Codigo = dr["Codigo"].ToString(),
-                                Nombre = dr["Nombre"].ToString(),
-                                Descripcion = dr["Descripcion"].ToString(),
-                                oCategoria = new Categoria() { IdCategoria = Convert.ToInt32(dr["IdCategoria"]), Descripcion = dr["DescripcionCategoria"].ToString() },
-                                Stock = Convert.ToInt32(dr["Stock"].ToString()),
-                                PrecioCompra = Convert.ToDecimal(dr["PrecioCompra"].ToString()),
-                                PrecioVenta = Convert.ToDecimal(dr["PrecioVenta"].ToString()),
-                                Estado = Convert.ToBoolean(dr["estado"]),
+                                IdProveedor = Convert.ToInt32(dr["IdProveedor"]),
+                                Documento = dr["Documento"].ToString(),
+                                RazonSocial = dr["RazonSocial"].ToString(),
+                                Correo = dr["Correo"].ToString(),
+                                Telefono = dr["Telefono"].ToString(),
+                                Estado = Convert.ToBoolean(dr["Estado"])
                             });
                         }
                     }
                 }
                 catch (Exception)
                 {
-                    lista = new List<Producto>();
+                    lista = new List<Proveedor>();
                 }
             }
             return lista;
         }
 
-        public int Registrar(Producto obj, out string Mensaje)
+        public int Registrar(Proveedor obj, out string Mensaje)
         {
-            int idProductogenerado = 0;
+            int idProveedorgenerado = 0;
             Mensaje = string.Empty;
 
             try
@@ -64,11 +60,11 @@ namespace CapaDatos
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
 
-                    SqlCommand cmd = new SqlCommand("sp_RegistraProdcuto", oconexion);
-                    cmd.Parameters.AddWithValue("Codigo", obj.Codigo);
-                    cmd.Parameters.AddWithValue("Nombre", obj.Nombre);
-                    cmd.Parameters.AddWithValue("Descripcion", obj.Descripcion);
-                    cmd.Parameters.AddWithValue("IdCategoria", obj.oCategoria.IdCategoria);
+                    SqlCommand cmd = new SqlCommand("SP_RegistrarProveedor", oconexion);
+                    cmd.Parameters.AddWithValue("Documento", obj.Documento);
+                    cmd.Parameters.AddWithValue("RazonSocial", obj.RazonSocial);
+                    cmd.Parameters.AddWithValue("Correo", obj.Correo);
+                    cmd.Parameters.AddWithValue("Telefono", obj.Telefono);
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
                     cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
@@ -77,19 +73,19 @@ namespace CapaDatos
                     oconexion.Open();
                     cmd.ExecuteNonQuery();
 
-                    idProductogenerado = Convert.ToInt32(cmd.Parameters["Resultado"].Value);
+                    idProveedorgenerado = Convert.ToInt32(cmd.Parameters["Resultado"].Value);
                     Mensaje = cmd.Parameters["Mensaje"].Value.ToString();
                 }
             }
             catch (Exception ex)
             {
-                idProductogenerado = 0;
+                idProveedorgenerado = 0;
                 Mensaje = ex.Message;
             }
-            return idProductogenerado;
+            return idProveedorgenerado;
         }
 
-        public bool Editar(Producto obj, out string Mensaje)
+        public bool Editar(Proveedor obj, out string Mensaje)
         {
             bool respuesta = false;
             Mensaje = string.Empty;
@@ -99,12 +95,12 @@ namespace CapaDatos
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
 
-                    SqlCommand cmd = new SqlCommand("sp_ModificarProducto", oconexion);
-                    cmd.Parameters.AddWithValue("IdProducto", obj.IdProducto);
-                    cmd.Parameters.AddWithValue("Codigo", obj.Codigo);
-                    cmd.Parameters.AddWithValue("Nombre", obj.Nombre);
-                    cmd.Parameters.AddWithValue("Descripcion", obj.Descripcion);
-                    cmd.Parameters.AddWithValue("IdCategoria", obj.oCategoria.IdCategoria);
+                    SqlCommand cmd = new SqlCommand("SP_ModificarProveedor", oconexion);
+                    cmd.Parameters.AddWithValue("IdProveedor", obj.IdProveedor);
+                    cmd.Parameters.AddWithValue("Documento", obj.Documento);
+                    cmd.Parameters.AddWithValue("RazonSocial", obj.RazonSocial);
+                    cmd.Parameters.AddWithValue("Correo", obj.Correo);
+                    cmd.Parameters.AddWithValue("Telefono", obj.Telefono);
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
                     cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
@@ -125,7 +121,7 @@ namespace CapaDatos
             return respuesta;
         }
 
-        public bool Eliminar(Producto obj, out string Mensaje)
+        public bool Eliminar(Proveedor obj, out string Mensaje)
         {
             bool respuesta = false;
             Mensaje = string.Empty;
@@ -135,16 +131,16 @@ namespace CapaDatos
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
                 {
 
-                    SqlCommand cmd = new SqlCommand("SP_EliminarProducto", oconexion);
-                    cmd.Parameters.AddWithValue("IdProducto", obj.IdProducto);
-                    cmd.Parameters.Add("Respuesta", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    SqlCommand cmd = new SqlCommand("SP_EliminarProveedor", oconexion);
+                    cmd.Parameters.AddWithValue("IdProveedor", obj.IdProveedor);
+                    cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     oconexion.Open();
                     cmd.ExecuteNonQuery();
 
-                    respuesta = Convert.ToBoolean(cmd.Parameters["Respuesta"].Value);
+                    respuesta = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
                     Mensaje = cmd.Parameters["Mensaje"].Value.ToString();
                 }
             }
@@ -155,6 +151,5 @@ namespace CapaDatos
             }
             return respuesta;
         }
-
     }
 }
