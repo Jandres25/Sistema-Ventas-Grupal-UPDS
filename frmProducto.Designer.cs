@@ -247,7 +247,7 @@
             this.btnlimpiarbuscador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlimpiarbuscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnlimpiarbuscador.ForeColor = System.Drawing.Color.White;
-            this.btnlimpiarbuscador.Location = new System.Drawing.Point(975, 34);
+            this.btnlimpiarbuscador.Location = new System.Drawing.Point(1012, 34);
             this.btnlimpiarbuscador.Name = "btnlimpiarbuscador";
             this.btnlimpiarbuscador.Size = new System.Drawing.Size(66, 31);
             this.btnlimpiarbuscador.TabIndex = 84;
@@ -262,7 +262,7 @@
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnbuscar.ForeColor = System.Drawing.Color.White;
-            this.btnbuscar.Location = new System.Drawing.Point(903, 34);
+            this.btnbuscar.Location = new System.Drawing.Point(940, 34);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(66, 31);
             this.btnbuscar.TabIndex = 83;
@@ -272,19 +272,21 @@
             // 
             // txtbusqueda
             // 
-            this.txtbusqueda.Location = new System.Drawing.Point(745, 41);
+            this.txtbusqueda.Location = new System.Drawing.Point(782, 41);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(144, 20);
             this.txtbusqueda.TabIndex = 82;
+            this.txtbusqueda.TextChanged += new System.EventHandler(this.txtbusqueda_TextChanged);
             // 
             // cbobusqueda
             // 
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(628, 39);
+            this.cbobusqueda.Location = new System.Drawing.Point(665, 39);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(103, 21);
             this.cbobusqueda.TabIndex = 81;
+            this.cbobusqueda.SelectedIndexChanged += new System.EventHandler(this.cbobusqueda_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -292,11 +294,12 @@
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(553, 40);
+            this.label11.Location = new System.Drawing.Point(590, 40);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 15);
             this.label11.TabIndex = 80;
             this.label11.Text = "Buscar por:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // txtid
             // 
@@ -316,7 +319,7 @@
             this.label10.Location = new System.Drawing.Point(249, 18);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label10.Size = new System.Drawing.Size(799, 59);
+            this.label10.Size = new System.Drawing.Size(845, 59);
             this.label10.TabIndex = 78;
             this.label10.Text = "Lista de Productos";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -471,7 +474,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(801, 416);
+            this.dgvdata.Size = new System.Drawing.Size(847, 386);
             this.dgvdata.TabIndex = 77;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
@@ -480,7 +483,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 521);
+            this.ClientSize = new System.Drawing.Size(1114, 521);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnlimpiar);
