@@ -294,6 +294,7 @@
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(191, 22);
             this.txtbusqueda.TabIndex = 82;
+            this.txtbusqueda.TextChanged += new System.EventHandler(this.txtbusqueda_TextChanged);
             // 
             // cbobusqueda
             // 
@@ -304,6 +305,7 @@
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(136, 24);
             this.cbobusqueda.TabIndex = 81;
+            this.cbobusqueda.SelectedIndexChanged += new System.EventHandler(this.cbobusqueda_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -311,12 +313,14 @@
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label11.ForeColor = System.Drawing.Color.Black;
+
             this.label11.Location = new System.Drawing.Point(737, 49);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 18);
             this.label11.TabIndex = 80;
             this.label11.Text = "Buscar por:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // txtid
             // 

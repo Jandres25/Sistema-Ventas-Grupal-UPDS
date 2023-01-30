@@ -293,5 +293,20 @@ namespace SistemaVentas
         {
 
         }
+
+        private void txtbusqueda_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbobusqueda_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
