@@ -13,48 +13,51 @@ using System.Windows.Forms;
 
 namespace SistemaVentas.Modales
 {
-    public partial class mdProveedor : Form
+    public partial class mdCliente : Form
     {
-        public Proveedor _Proveedor { get; set; }
-        public mdProveedor()
+
+        public Cliente _Cliente { get; set; }
+        public mdCliente()
         {
             InitializeComponent();
         }
 
-        private void mdProveedor_Load(object sender, EventArgs e)
+        private void mdCliente_Load(object sender, EventArgs e)
         {
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
                 if (columna.Visible == true && columna.Name != "btnseleccionar")
+                {
                     cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
+                }
             }
             cbobusqueda.DisplayMember = "Texto";
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
 
-            List<Proveedor> lista = new CN_Proveedor().listar();
+            List<Cliente> lista = new CN_Cliente().listar();
 
-            foreach  (Proveedor item in lista)
+            foreach (Cliente item in lista)
             {
-                dgvdata.Rows.Add(new object[] {item.IdProveedor, item.Documento, item.RazonSocial
-                });
+                if (item.Estado)
+                {
+                    dgvdata.Rows.Add(new object[] { item.Documento, item.NombreCompleto });
+                }
             }
         }
 
         private void dgvdata_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int iRow = e.RowIndex;
-            int iCol = e.ColumnIndex;
+            int iColum = e.ColumnIndex;
 
-            if (iRow >= 0 && iCol > 0)
+            if (iRow >= 0 && iColum >= 0)
             {
-                _Proveedor = new Proveedor()
+                _Cliente = new Cliente()
                 {
-                    IdProveedor = Convert.ToInt32(dgvdata.Rows[iRow].Cells["Id"].Value.ToString()),
                     Documento = dgvdata.Rows[iRow].Cells["NroDocumento"].Value.ToString(),
-                    RazonSocial = dgvdata.Rows[iRow].Cells["RazonSocial"].Value.ToString()
+                    NombreCompleto = dgvdata.Rows[iRow].Cells["NombreCompleto"].Value.ToString()
                 };
-
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
