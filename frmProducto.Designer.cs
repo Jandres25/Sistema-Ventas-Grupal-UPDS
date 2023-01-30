@@ -262,10 +262,7 @@
             this.btnlimpiarbuscador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlimpiarbuscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnlimpiarbuscador.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
             this.btnlimpiarbuscador.Location = new System.Drawing.Point(1012, 34);
-=======
->>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
             this.btnlimpiarbuscador.Location = new System.Drawing.Point(1300, 42);
             this.btnlimpiarbuscador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnlimpiarbuscador.Name = "btnlimpiarbuscador";
@@ -282,10 +279,6 @@
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnbuscar.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.btnbuscar.Location = new System.Drawing.Point(940, 34);
-=======
->>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
             this.btnbuscar.Location = new System.Drawing.Point(1204, 42);
             this.btnbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnbuscar.Name = "btnbuscar";
@@ -294,13 +287,7 @@
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = false;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
-<<<<<<< HEAD
             this.txtbusqueda.Location = new System.Drawing.Point(782, 41);
-=======
-            // 
-            // txtbusqueda
-            // 
->>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
             this.txtbusqueda.Location = new System.Drawing.Point(993, 50);
             this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbusqueda.Name = "txtbusqueda";
@@ -312,10 +299,7 @@
             // 
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
-<<<<<<< HEAD
             this.cbobusqueda.Location = new System.Drawing.Point(665, 39);
-=======
->>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
             this.cbobusqueda.Location = new System.Drawing.Point(837, 48);
             this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbobusqueda.Name = "cbobusqueda";
@@ -329,11 +313,7 @@
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label11.ForeColor = System.Drawing.Color.Black;
-<<<<<<< HEAD
             this.label11.Location = new System.Drawing.Point(590, 40);
-=======
-
->>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
             this.label11.Location = new System.Drawing.Point(737, 49);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
@@ -361,11 +341,8 @@
             this.label10.Location = new System.Drawing.Point(332, 22);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-<<<<<<< HEAD
             this.label10.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.label10.Size = new System.Drawing.Size(845, 59);
-=======
->>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
             this.label10.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.label10.Size = new System.Drawing.Size(1065, 72);
             this.label10.TabIndex = 78;
@@ -524,10 +501,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.RowTemplate.Height = 28;
-<<<<<<< HEAD
             this.dgvdata.Size = new System.Drawing.Size(847, 386);
-=======
->>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
             this.dgvdata.Size = new System.Drawing.Size(1068, 512);
             this.dgvdata.TabIndex = 77;
             // 
@@ -652,10 +626,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1114, 521);
-=======
->>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
             this.ClientSize = new System.Drawing.Size(1413, 641);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btneliminar);
