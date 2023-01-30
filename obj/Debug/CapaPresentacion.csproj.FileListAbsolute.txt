@@ -126,6 +126,11 @@ C:\clons_github\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.FrmAcercade.r
 >>>>>>> 110d004d0f53ddab990b3b75d67ce1e25f435a2e
 C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.FrmAcercade.resources
 C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.Modales.mdProducto.resources
+<<<<<<< HEAD
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.Modales.mdProducto.resources
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.Modales.mdProveedor.resources
 C:\clons_github\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.Modales.mdCliente.resources
+=======
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmReporteVentas.resources
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.frmReporteCompras.resources
+>>>>>>> 61a8c6dab4950ce939d89206e8a1553a1996cfc3
