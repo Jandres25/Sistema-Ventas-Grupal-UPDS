@@ -84,7 +84,7 @@ namespace CapaPresentacion
 
         private void submenuregistrarventa_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menuventas, new frmVentas());
+            AbrirFormulario(menuventas, new frmVentas(usuarioactual));
         }
 
         private void submenuverdetalleventa_Click(object sender, EventArgs e)
@@ -94,7 +94,7 @@ namespace CapaPresentacion
 
         private void submenuregistrarcompra_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menucompras, new frmCompras());
+            AbrirFormulario(menucompras, new frmCompras(usuarioactual));
         }
 
         private void submenuverdetallecompra_Click(object sender, EventArgs e)
@@ -106,25 +106,14 @@ namespace CapaPresentacion
         {
             AbrirFormulario((IconMenuItem)sender, new frmClientes());
         }
-
         private void menuproveedores_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new frmProveedores());
         }
-
-        private void menureportes_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new frmReportes());
-        }
-
         private void menuacercade_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            FrmAcercade form = new FrmAcercade();
+            form.ShowDialog();
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -133,6 +122,20 @@ namespace CapaPresentacion
             {
                 this.Close();
             }
+        }
+        private void submenunegocio_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menumantenedor, new frmNegocio());
+        }
+
+        private void submenureportecompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menureportes, new frmReporteCompras());
+        }
+
+        private void submenureporteventas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menureportes, new frmReporteVentas());
         }
     }
 }

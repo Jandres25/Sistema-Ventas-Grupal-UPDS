@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SistemaVentas
 {
-    public partial class frmReportes : Form
+    public partial class FrmAcercade : Form
     {
-        public frmReportes()
+        public FrmAcercade()
         {
             InitializeComponent();
+        }
+
+        private void FrmAcercade_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
