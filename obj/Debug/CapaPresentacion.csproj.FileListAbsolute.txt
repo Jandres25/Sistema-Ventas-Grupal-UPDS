@@ -181,3 +181,8 @@ C:\laragon\Sistema-Ventas-Grupal-UPDS\bin\Debug\BouncyCastle.Crypto.dll
 C:\laragon\Sistema-Ventas-Grupal-UPDS\bin\Debug\itextsharp.dll
 C:\laragon\Sistema-Ventas-Grupal-UPDS\bin\Debug\itextsharp.xmlworker.dll
 C:\laragon\Sistema-Ventas-Grupal-UPDS\bin\Debug\itextsharp.xml
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\bin\Debug\BouncyCastle.Crypto.dll
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\bin\Debug\itextsharp.dll
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\bin\Debug\itextsharp.xmlworker.dll
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\bin\Debug\itextsharp.xml
+C:\Sistemas de Informacion\SistemaVentas\Sistema-Ventas-Grupal-UPDS\obj\Debug\SistemaVentas.Modales.mdCliente.resources

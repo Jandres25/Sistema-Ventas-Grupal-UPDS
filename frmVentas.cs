@@ -1,4 +1,6 @@
 ﻿using CapaEntidad;
+using CapaNegocio;
+using CapaPresentacion.Utilidades;
 using SistemaVentas.Modales;
 using System;
 using System.Collections.Generic;
@@ -22,32 +24,6 @@ namespace SistemaVentas
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txttotalpagar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void frmVentas_Load(object sender, EventArgs e)
         {
             cbotipodocumento.Items.Add(new CapaPresentacion.Utilidades.OpcionCombo() { Valor = "Boleta", Texto = "Boleta" });
@@ -59,19 +35,9 @@ namespace SistemaVentas
             txtfecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
             txtidproducto.Text = "0";
 
-            pagacon.Text = "";
-            cambio.Text = "";
+            txtpagacon.Text = "";
+            txtcambio.Text = "";
             txttotalpagar.Text = "0";
-
-        }
-
-        private void pagacon_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cambio_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -151,17 +117,25 @@ namespace SistemaVentas
 
             if (!producto_existe)
             {
-                dgvdata.Rows.Add(new object[] {
+                bool respuesta = new CN_Venta().RestarStock(
+                    Convert.ToInt32(txtidproducto.Text),
+                    Convert.ToInt32(txtcantidad.Value.ToString())
+                    );
+
+                if (respuesta)
+                {
+                    dgvdata.Rows.Add(new object[] {
                         txtidproducto.Text,
                         txtproducto.Text,
                         precio.ToString("0.00"),
                         txtcantidad.Value.ToString(),
                         (txtcantidad.Value * precio).ToString("0.00")
-                });
+                    });
 
-                calcularTotal();
-                LimpiarProducto();
-                txtcodproducto.Select();
+                    calcularTotal();
+                    LimpiarProducto();
+                    txtcodproducto.Select();
+                }
             }
         }
 
@@ -172,7 +146,7 @@ namespace SistemaVentas
             {
                 foreach (DataGridViewRow row in dgvdata.Rows)
                 {
-                    total += Convert.ToDecimal(row.Cells["Subtotal"].Value.ToString());
+                    total += Convert.ToDecimal(row.Cells["SubTotal"].Value.ToString());
                 }
                 txttotalpagar.Text = total.ToString("0.00");
             }
@@ -215,15 +189,17 @@ namespace SistemaVentas
 
                 if (indice >= 0)
                 {
-                    dgvdata.Rows.RemoveAt(indice);
-                    calcularTotal();
+                    bool respuesta = new CN_Venta().SumarStock(
+                        Convert.ToInt32(dgvdata.Rows[indice].Cells["IdProducto"].Value.ToString()),
+                        Convert.ToInt32(dgvdata.Rows[indice].Cells["Cantidad"].Value.ToString()));
+
+                    if (respuesta)
+                    {
+                        dgvdata.Rows.RemoveAt(indice);
+                        calcularTotal();
+                    }
                 }
             }
-        }
-
-        private void txtprecio_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
         }
 
         private void calcularcambio()
@@ -237,31 +213,41 @@ namespace SistemaVentas
             decimal pagocon;
             decimal total = Convert.ToDecimal(txttotalpagar.Text);
 
-            if (pagacon.Text.Trim() == "")
+            if (txtpagacon.Text.Trim() == "")
             {
-                pagacon.Text = "0";
+                txtpagacon.Text = "0";
             }
 
-            if (decimal.TryParse(pagacon.Text.Trim(), out pagocon))
+            if (decimal.TryParse(txtpagacon.Text.Trim(), out pagocon))
             {
                 if (pagocon < total)
                 {
-                    cambio.Text = "0.00";
+                    txtcambio.Text = "0.00";
                 }
                 else
                 {
-                    decimal cambiod = pagocon - total;
-                    cambio.Text = cambiod.ToString("0.00");
+                    decimal cambio = pagocon - total;
+                    txtcambio.Text = cambio.ToString("0.00");
                 }
             }
         }
 
         private void pagacon_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //if (e.KeyData == Keys.Enter)
-            //{
-            //    calcularcambio();
-            //}
+            if (Char.IsDigit(e.KeyChar))
+                e.Handled = false;
+            else
+            {
+                if (txtpagacon.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+                    e.Handled = true;
+                else
+                {
+                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                        e.Handled = false;
+                    else
+                        e.Handled = true;
+                }
+            }
         }
 
         private void pagacon_KeyDown(object sender, KeyEventArgs e)
@@ -269,6 +255,124 @@ namespace SistemaVentas
             if (e.KeyData == Keys.Enter)
             {
                 calcularcambio();
+            }
+        }
+
+        private void btnregistrar_Click(object sender, EventArgs e)
+        {
+            if (txtdoccliente.Text == "")
+            {
+                MessageBox.Show("Debe ingresar un documento del cliente", "Error",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (txtnombrecliente.Text == "")
+            {
+                MessageBox.Show("Debe ingresar el nombre del cliente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (dgvdata.Rows.Count < 1)
+            {
+                MessageBox.Show("Debe ingresar productos en la venta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            DataTable detalle_venta = new DataTable();
+
+            detalle_venta.Columns.Add("IdProducto", typeof(int));
+            detalle_venta.Columns.Add("PrecioVenta", typeof(decimal));
+            detalle_venta.Columns.Add("Cantidad", typeof(int));
+            detalle_venta.Columns.Add("SubTotal", typeof(decimal));
+
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                detalle_venta.Rows.Add(new object[]
+                {
+                    row.Cells["IdProducto"].Value.ToString(),
+                    row.Cells["Precio"].Value.ToString(),
+                    row.Cells["Cantidad"].Value.ToString(),
+                    row.Cells["SubTotal"].Value.ToString()
+                });
+            }
+
+            int idcorrelativo = new CN_Venta().ObtenerCorrelativo();
+            string numeroDocumento = string.Format("{0:00000}", idcorrelativo);
+            calcularcambio();
+
+            Venta oVenta = new Venta()
+            {
+                oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
+                TipoDocumento = ((OpcionCombo)cbotipodocumento.SelectedItem).Texto,
+                NumeroDocumento = numeroDocumento,
+                DocumentoCliente = txtdoccliente.Text,
+                NombreCliente = txtnombrecliente.Text,
+                MontoPago = Convert.ToDecimal(txtpagacon.Text),
+                MontoCambio = Convert.ToDecimal(txtcambio.Text),
+                MontoTotal = Convert.ToDecimal(txttotalpagar.Text)
+            };
+
+            string mensaje = string.Empty;
+            bool respuesta = new CN_Venta().Registrar(oVenta, detalle_venta, out mensaje);
+
+            if (respuesta)
+            {
+                var result = MessageBox.Show("Numero de Venta generada:\n" + numeroDocumento + "\n\n¿Desea copiar al portapapeles?", "Mensaje", MessageBoxButtons.YesNo,MessageBoxIcon.Information);
+
+                if (DialogResult == DialogResult.Yes)
+                    Clipboard.SetText(numeroDocumento);
+
+                txtdoccliente.Text = "";
+                txtnombrecliente.Text = "";
+                dgvdata.Rows.Clear();
+                calcularTotal();
+                txtpagacon.Text = "";
+                txtcambio.Text = "";
+            }
+            else
+                MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void txtcodproducto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                Producto oProducto = new CN_Producto().listar().Where(p => p.Codigo == txtcodproducto.Text && p.Estado == true).FirstOrDefault();
+                if (oProducto != null)
+                {
+                    txtcodproducto.BackColor = Color.Honeydew;
+                    txtidproducto.Text = oProducto.IdProducto.ToString();
+                    txtproducto.Text = oProducto.Nombre;
+                    txtprecio.Text = oProducto.PrecioVenta.ToString("0.00");
+                    txtstock.Text = oProducto.Stock.ToString();
+                    txtcantidad.Select();
+                }
+                else
+                {
+                    txtcodproducto.BackColor = Color.MistyRose;
+                    txtidproducto.Text = "0";
+                    txtproducto.Text = "";
+                    txtprecio.Text = "";
+                    txtstock.Text = "";
+                    txtcantidad.Value = 1;
+                }
+            }
+        }
+
+        private void txtprecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+                e.Handled = false;
+            else
+            {
+                if (txtprecio.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+                    e.Handled = true;
+                else
+                {
+                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                        e.Handled = false;
+                    else
+                        e.Handled = true;
+                }
             }
         }
     }

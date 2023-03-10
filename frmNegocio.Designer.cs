@@ -51,7 +51,7 @@
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(185, 9);
+            this.label9.Location = new System.Drawing.Point(189, 19);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(175, 25);
@@ -68,7 +68,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 450);
+            this.label1.Size = new System.Drawing.Size(551, 550);
             this.label1.TabIndex = 77;
             // 
             // groupBox1
@@ -84,7 +84,7 @@
             this.groupBox1.Controls.Add(this.txtdireccion);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.picLog);
-            this.groupBox1.Location = new System.Drawing.Point(31, 63);
+            this.groupBox1.Location = new System.Drawing.Point(35, 73);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(496, 349);
             this.groupBox1.TabIndex = 79;
@@ -226,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(551, 550);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);

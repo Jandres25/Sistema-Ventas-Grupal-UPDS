@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,8 +74,8 @@
             // 
             // SubTotal
             // 
-            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.Black;
-            this.SubTotal.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.SubTotal.DefaultCellStyle = dataGridViewCellStyle1;
             this.SubTotal.HeaderText = "Sub Total";
             this.SubTotal.MinimumWidth = 6;
             this.SubTotal.Name = "SubTotal";
@@ -84,8 +84,8 @@
             // 
             // PrecioVenta
             // 
-            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.Black;
-            this.PrecioVenta.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.PrecioVenta.DefaultCellStyle = dataGridViewCellStyle2;
             this.PrecioVenta.HeaderText = "Precio Venta";
             this.PrecioVenta.MinimumWidth = 6;
             this.PrecioVenta.Name = "PrecioVenta";
@@ -94,8 +94,8 @@
             // 
             // PrecioCompra
             // 
-            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.Black;
-            this.PrecioCompra.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.PrecioCompra.DefaultCellStyle = dataGridViewCellStyle3;
             this.PrecioCompra.HeaderText = "Precio Compra";
             this.PrecioCompra.MinimumWidth = 6;
             this.PrecioCompra.Name = "PrecioCompra";
@@ -104,8 +104,8 @@
             // 
             // Categoria
             // 
-            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.Black;
-            this.Categoria.DefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.Categoria.DefaultCellStyle = dataGridViewCellStyle4;
             this.Categoria.HeaderText = "Categoria";
             this.Categoria.MinimumWidth = 6;
             this.Categoria.Name = "Categoria";
@@ -114,8 +114,8 @@
             // 
             // NombreProducto
             // 
-            dataGridViewCellStyle61.ForeColor = System.Drawing.Color.Black;
-            this.NombreProducto.DefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.NombreProducto.DefaultCellStyle = dataGridViewCellStyle5;
             this.NombreProducto.HeaderText = "Nombre Producto";
             this.NombreProducto.MinimumWidth = 6;
             this.NombreProducto.Name = "NombreProducto";
@@ -124,8 +124,8 @@
             // 
             // CodigoProducto
             // 
-            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.Black;
-            this.CodigoProducto.DefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.CodigoProducto.DefaultCellStyle = dataGridViewCellStyle6;
             this.CodigoProducto.HeaderText = "Codigo Producto";
             this.CodigoProducto.MinimumWidth = 6;
             this.CodigoProducto.Name = "CodigoProducto";
@@ -134,8 +134,8 @@
             // 
             // RazonSocial
             // 
-            dataGridViewCellStyle63.ForeColor = System.Drawing.Color.Black;
-            this.RazonSocial.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.RazonSocial.DefaultCellStyle = dataGridViewCellStyle7;
             this.RazonSocial.HeaderText = "Razon Social";
             this.RazonSocial.MinimumWidth = 6;
             this.RazonSocial.Name = "RazonSocial";
@@ -144,8 +144,8 @@
             // 
             // DocumentoProveedor
             // 
-            dataGridViewCellStyle64.ForeColor = System.Drawing.Color.Black;
-            this.DocumentoProveedor.DefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            this.DocumentoProveedor.DefaultCellStyle = dataGridViewCellStyle8;
             this.DocumentoProveedor.HeaderText = "Documento Proveedor";
             this.DocumentoProveedor.MinimumWidth = 6;
             this.DocumentoProveedor.Name = "DocumentoProveedor";
@@ -154,8 +154,8 @@
             // 
             // UsuarioRegistro
             // 
-            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.Black;
-            this.UsuarioRegistro.DefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            this.UsuarioRegistro.DefaultCellStyle = dataGridViewCellStyle9;
             this.UsuarioRegistro.HeaderText = "Usuario Registro";
             this.UsuarioRegistro.MinimumWidth = 6;
             this.UsuarioRegistro.Name = "UsuarioRegistro";
@@ -164,8 +164,8 @@
             // 
             // MontoTotal
             // 
-            dataGridViewCellStyle66.ForeColor = System.Drawing.Color.Black;
-            this.MontoTotal.DefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            this.MontoTotal.DefaultCellStyle = dataGridViewCellStyle10;
             this.MontoTotal.HeaderText = "Monto Total";
             this.MontoTotal.MinimumWidth = 6;
             this.MontoTotal.Name = "MontoTotal";
@@ -174,8 +174,8 @@
             // 
             // NumeroDocumento
             // 
-            dataGridViewCellStyle67.ForeColor = System.Drawing.Color.Black;
-            this.NumeroDocumento.DefaultCellStyle = dataGridViewCellStyle67;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            this.NumeroDocumento.DefaultCellStyle = dataGridViewCellStyle11;
             this.NumeroDocumento.HeaderText = "Numero Documento";
             this.NumeroDocumento.MinimumWidth = 6;
             this.NumeroDocumento.Name = "NumeroDocumento";
@@ -184,8 +184,8 @@
             // 
             // TipoDocumento
             // 
-            dataGridViewCellStyle68.ForeColor = System.Drawing.Color.Black;
-            this.TipoDocumento.DefaultCellStyle = dataGridViewCellStyle68;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.TipoDocumento.DefaultCellStyle = dataGridViewCellStyle12;
             this.TipoDocumento.HeaderText = "Tipo Documento";
             this.TipoDocumento.MinimumWidth = 6;
             this.TipoDocumento.Name = "TipoDocumento";
@@ -194,9 +194,9 @@
             // 
             // FechaRegistro
             // 
-            dataGridViewCellStyle69.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle69.ForeColor = System.Drawing.Color.Black;
-            this.FechaRegistro.DefaultCellStyle = dataGridViewCellStyle69;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            this.FechaRegistro.DefaultCellStyle = dataGridViewCellStyle13;
             this.FechaRegistro.HeaderText = "Fecha Registro";
             this.FechaRegistro.MinimumWidth = 6;
             this.FechaRegistro.Name = "FechaRegistro";
@@ -205,8 +205,8 @@
             // 
             // Cantidad
             // 
-            dataGridViewCellStyle70.ForeColor = System.Drawing.Color.Black;
-            this.Cantidad.DefaultCellStyle = dataGridViewCellStyle70;
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            this.Cantidad.DefaultCellStyle = dataGridViewCellStyle14;
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.MinimumWidth = 6;
             this.Cantidad.Name = "Cantidad";
@@ -234,7 +234,7 @@
             this.Cantidad,
             this.SubTotal});
             this.dgvdata.GridColor = System.Drawing.Color.Black;
-            this.dgvdata.Location = new System.Drawing.Point(25, 213);
+            this.dgvdata.Location = new System.Drawing.Point(162, 257);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
             this.dgvdata.RowHeadersWidth = 51;
@@ -248,7 +248,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(243, 68);
+            this.label1.Location = new System.Drawing.Point(380, 112);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 18);
@@ -261,7 +261,7 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(19, 68);
+            this.label5.Location = new System.Drawing.Point(156, 112);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 18);
@@ -280,7 +280,7 @@
             this.btnbuscarresultado.IconColor = System.Drawing.Color.Black;
             this.btnbuscarresultado.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarresultado.IconSize = 25;
-            this.btnbuscarresultado.Location = new System.Drawing.Point(462, 60);
+            this.btnbuscarresultado.Location = new System.Drawing.Point(599, 104);
             this.btnbuscarresultado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbuscarresultado.Name = "btnbuscarresultado";
             this.btnbuscarresultado.Size = new System.Drawing.Size(97, 35);
@@ -303,7 +303,7 @@
             this.btnlimpiarbuscador.IconColor = System.Drawing.Color.Black;
             this.btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnlimpiarbuscador.IconSize = 25;
-            this.btnlimpiarbuscador.Location = new System.Drawing.Point(657, 156);
+            this.btnlimpiarbuscador.Location = new System.Drawing.Point(794, 200);
             this.btnlimpiarbuscador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnlimpiarbuscador.Name = "btnlimpiarbuscador";
             this.btnlimpiarbuscador.Size = new System.Drawing.Size(88, 38);
@@ -313,7 +313,7 @@
             // 
             // txtbusqueda
             // 
-            this.txtbusqueda.Location = new System.Drawing.Point(259, 162);
+            this.txtbusqueda.Location = new System.Drawing.Point(396, 206);
             this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(249, 22);
@@ -323,7 +323,7 @@
             // 
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(115, 165);
+            this.cbobusqueda.Location = new System.Drawing.Point(252, 209);
             this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(136, 24);
@@ -335,7 +335,7 @@
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(22, 166);
+            this.label11.Location = new System.Drawing.Point(159, 210);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 18);
@@ -354,7 +354,7 @@
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 25;
-            this.btnbuscar.Location = new System.Drawing.Point(542, 156);
+            this.btnbuscar.Location = new System.Drawing.Point(679, 200);
             this.btnbuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(88, 38);
@@ -366,7 +366,7 @@
             // 
             this.dtpfin.CustomFormat = "dd/MM/yyyy";
             this.dtpfin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpfin.Location = new System.Drawing.Point(327, 65);
+            this.dtpfin.Location = new System.Drawing.Point(464, 109);
             this.dtpfin.Name = "dtpfin";
             this.dtpfin.Size = new System.Drawing.Size(109, 22);
             this.dtpfin.TabIndex = 120;
@@ -375,7 +375,7 @@
             // 
             this.dtpinicio.CustomFormat = "dd/MM/yyyy";
             this.dtpinicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpinicio.Location = new System.Drawing.Point(114, 66);
+            this.dtpinicio.Location = new System.Drawing.Point(251, 110);
             this.dtpinicio.Name = "dtpinicio";
             this.dtpinicio.Size = new System.Drawing.Size(111, 22);
             this.dtpinicio.TabIndex = 118;
@@ -386,13 +386,13 @@
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(13, 18);
+            this.label10.Location = new System.Drawing.Point(143, 65);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.label10.Size = new System.Drawing.Size(1150, 92);
             this.label10.TabIndex = 119;
-            this.label10.Text = "Reporte Compras";
+            this.label10.Text = "Reporte Ventas";
             // 
             // label4
             // 
@@ -400,7 +400,7 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(6, 136);
+            this.label4.Location = new System.Drawing.Point(143, 180);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
@@ -411,7 +411,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 551);
+            this.ClientSize = new System.Drawing.Size(1443, 630);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);

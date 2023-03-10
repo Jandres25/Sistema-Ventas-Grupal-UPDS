@@ -43,15 +43,13 @@ namespace SistemaVentas
                 txtnombrecliente.Text = oVenta.NombreCliente;
 
                 dgvdata.Rows.Clear();
-                foreach (Detalle_Venta dv in oVenta.oDetalleVenta)
+                foreach (Detalle_Venta dv in oVenta.oDetalle_Venta)
                 {
                     dgvdata.Rows.Add(new object[] {dv.oProducto.Nombre, dv.PrecioVenta, dv.Cantidad, dv.Subtotal });
-
                 }
                 txtmontototal.Text = oVenta.MontoTotal.ToString("0.00");
                 txtmontopago.Text = oVenta.MontoPago.ToString("0.00");
-                txtmontocambio.Text = oVenta.MontoTotal.ToString("0.00");
-                
+                txtmontocambio.Text = oVenta.MontoCambio.ToString("0.00");
             }
         }
 

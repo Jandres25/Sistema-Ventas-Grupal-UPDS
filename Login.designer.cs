@@ -59,7 +59,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(230, 58);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Sistema de Venta\r\n   para Cafeteria";
+            this.label2.Text = "Sistema de Venta\r\n   para Cafeterias";
             // 
             // iconPictureBox1
             // 

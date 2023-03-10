@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnlimpiarbuscador = new FontAwesome.Sharp.IconButton();
@@ -59,20 +58,11 @@
             this.btndescargar = new FontAwesome.Sharp.IconButton();
             this.txtmontototal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 162);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 46);
-            this.label1.TabIndex = 2;
             // 
             // label10
             // 
@@ -80,10 +70,11 @@
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(84, 4);
+            this.label10.Location = new System.Drawing.Point(275, 3);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label10.Size = new System.Drawing.Size(617, 504);
+            this.label10.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.label10.Size = new System.Drawing.Size(822, 620);
             this.label10.TabIndex = 81;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -93,9 +84,10 @@
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(247, 36);
+            this.label11.Location = new System.Drawing.Point(492, 42);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(122, 15);
+            this.label11.Size = new System.Drawing.Size(148, 18);
             this.label11.TabIndex = 102;
             this.label11.Text = "Numero Documento:";
             // 
@@ -112,10 +104,10 @@
             this.btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnlimpiarbuscador.IconSize = 23;
             this.btnlimpiarbuscador.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnlimpiarbuscador.Location = new System.Drawing.Point(598, 25);
-            this.btnlimpiarbuscador.Margin = new System.Windows.Forms.Padding(2);
+            this.btnlimpiarbuscador.Location = new System.Drawing.Point(960, 29);
+            this.btnlimpiarbuscador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnlimpiarbuscador.Name = "btnlimpiarbuscador";
-            this.btnlimpiarbuscador.Size = new System.Drawing.Size(80, 26);
+            this.btnlimpiarbuscador.Size = new System.Drawing.Size(107, 32);
             this.btnlimpiarbuscador.TabIndex = 101;
             this.btnlimpiarbuscador.Text = "Limpiar";
             this.btnlimpiarbuscador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,10 +127,10 @@
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 23;
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbuscar.Location = new System.Drawing.Point(512, 25);
-            this.btnbuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnbuscar.Location = new System.Drawing.Point(846, 29);
+            this.btnbuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(82, 26);
+            this.btnbuscar.Size = new System.Drawing.Size(109, 32);
             this.btnbuscar.TabIndex = 100;
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -147,9 +139,10 @@
             // 
             // txtbusqueda
             // 
-            this.txtbusqueda.Location = new System.Drawing.Point(385, 31);
+            this.txtbusqueda.Location = new System.Drawing.Point(676, 36);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.txtbusqueda.Name = "txtbusqueda";
-            this.txtbusqueda.Size = new System.Drawing.Size(112, 20);
+            this.txtbusqueda.Size = new System.Drawing.Size(148, 22);
             this.txtbusqueda.TabIndex = 99;
             // 
             // label2
@@ -158,9 +151,10 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(90, 10);
+            this.label2.Location = new System.Drawing.Point(283, 10);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 25);
+            this.label2.Size = new System.Drawing.Size(189, 29);
             this.label2.TabIndex = 98;
             this.label2.Text = "Detalle Compra";
             // 
@@ -173,11 +167,11 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtfecha);
-            this.groupBox1.Location = new System.Drawing.Point(118, 72);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(320, 87);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(514, 89);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(685, 110);
             this.groupBox1.TabIndex = 103;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información Compra";
@@ -185,10 +179,10 @@
             // txttipodocumento
             // 
             this.txttipodocumento.BackColor = System.Drawing.Color.Gainsboro;
-            this.txttipodocumento.Location = new System.Drawing.Point(166, 54);
-            this.txttipodocumento.Margin = new System.Windows.Forms.Padding(2);
+            this.txttipodocumento.Location = new System.Drawing.Point(241, 65);
+            this.txttipodocumento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttipodocumento.Name = "txttipodocumento";
-            this.txttipodocumento.Size = new System.Drawing.Size(129, 20);
+            this.txttipodocumento.Size = new System.Drawing.Size(171, 22);
             this.txttipodocumento.TabIndex = 89;
             // 
             // label3
@@ -197,9 +191,10 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(352, 26);
+            this.label3.Location = new System.Drawing.Point(489, 31);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 15);
+            this.label3.Size = new System.Drawing.Size(64, 18);
             this.label3.TabIndex = 88;
             this.label3.Text = "Usuario:";
             // 
@@ -207,10 +202,10 @@
             // 
             this.txtusuario.BackColor = System.Drawing.Color.Gainsboro;
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusuario.Location = new System.Drawing.Point(355, 52);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtusuario.Location = new System.Drawing.Point(493, 63);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(129, 21);
+            this.txtusuario.Size = new System.Drawing.Size(171, 24);
             this.txtusuario.TabIndex = 87;
             // 
             // label8
@@ -219,9 +214,10 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(164, 26);
+            this.label8.Location = new System.Drawing.Point(239, 31);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 15);
+            this.label8.Size = new System.Drawing.Size(123, 18);
             this.label8.TabIndex = 85;
             this.label8.Text = "Tipo Documento:";
             // 
@@ -231,19 +227,20 @@
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(5, 26);
+            this.label9.Location = new System.Drawing.Point(27, 31);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 15);
+            this.label9.Size = new System.Drawing.Size(53, 18);
             this.label9.TabIndex = 86;
             this.label9.Text = "Fecha:";
             // 
             // txtfecha
             // 
             this.txtfecha.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtfecha.Location = new System.Drawing.Point(4, 54);
-            this.txtfecha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtfecha.Location = new System.Drawing.Point(25, 65);
+            this.txtfecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(129, 20);
+            this.txtfecha.Size = new System.Drawing.Size(171, 22);
             this.txtfecha.TabIndex = 2;
             // 
             // groupBox2
@@ -254,11 +251,11 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtdocproveedor);
-            this.groupBox2.Location = new System.Drawing.Point(118, 174);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(320, 212);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(514, 86);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(685, 106);
             this.groupBox2.TabIndex = 104;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Información Proveedor";
@@ -266,18 +263,18 @@
             // txtnombreproveedor
             // 
             this.txtnombreproveedor.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtnombreproveedor.Location = new System.Drawing.Point(187, 54);
-            this.txtnombreproveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtnombreproveedor.Location = new System.Drawing.Point(249, 66);
+            this.txtnombreproveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnombreproveedor.Name = "txtnombreproveedor";
-            this.txtnombreproveedor.Size = new System.Drawing.Size(186, 20);
+            this.txtnombreproveedor.Size = new System.Drawing.Size(247, 22);
             this.txtnombreproveedor.TabIndex = 87;
             // 
             // txtnumerodocumento
             // 
-            this.txtnumerodocumento.Location = new System.Drawing.Point(458, 52);
-            this.txtnumerodocumento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtnumerodocumento.Location = new System.Drawing.Point(611, 64);
+            this.txtnumerodocumento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnumerodocumento.Name = "txtnumerodocumento";
-            this.txtnumerodocumento.Size = new System.Drawing.Size(41, 20);
+            this.txtnumerodocumento.Size = new System.Drawing.Size(53, 22);
             this.txtnumerodocumento.TabIndex = 85;
             this.txtnumerodocumento.Visible = false;
             // 
@@ -287,9 +284,10 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(184, 26);
+            this.label6.Location = new System.Drawing.Point(245, 32);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 15);
+            this.label6.Size = new System.Drawing.Size(101, 18);
             this.label6.TabIndex = 83;
             this.label6.Text = "Razón Social:";
             // 
@@ -299,60 +297,62 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(2, 26);
+            this.label7.Location = new System.Drawing.Point(3, 32);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 15);
+            this.label7.Size = new System.Drawing.Size(148, 18);
             this.label7.TabIndex = 84;
             this.label7.Text = "Número Documento:";
             // 
             // txtdocproveedor
             // 
             this.txtdocproveedor.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtdocproveedor.Location = new System.Drawing.Point(4, 54);
-            this.txtdocproveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtdocproveedor.Location = new System.Drawing.Point(5, 66);
+            this.txtdocproveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtdocproveedor.Name = "txtdocproveedor";
-            this.txtdocproveedor.Size = new System.Drawing.Size(130, 20);
+            this.txtdocproveedor.Size = new System.Drawing.Size(172, 22);
             this.txtdocproveedor.TabIndex = 2;
             // 
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producto,
             this.PrecioCompra,
             this.Cantidad,
             this.SubTotal});
-            this.dgvdata.Location = new System.Drawing.Point(111, 265);
+            this.dgvdata.Location = new System.Drawing.Point(311, 324);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(567, 186);
+            this.dgvdata.Size = new System.Drawing.Size(756, 229);
             this.dgvdata.TabIndex = 105;
             // 
             // Producto
@@ -378,6 +378,7 @@
             this.Cantidad.MinimumWidth = 6;
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 125;
             // 
             // SubTotal
             // 
@@ -386,6 +387,7 @@
             this.SubTotal.MinimumWidth = 6;
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.ReadOnly = true;
+            this.SubTotal.Width = 125;
             // 
             // btndescargar
             // 
@@ -400,10 +402,10 @@
             this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btndescargar.IconSize = 20;
             this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndescargar.Location = new System.Drawing.Point(529, 465);
-            this.btndescargar.Margin = new System.Windows.Forms.Padding(2);
+            this.btndescargar.Location = new System.Drawing.Point(868, 570);
+            this.btndescargar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndescargar.Name = "btndescargar";
-            this.btndescargar.Size = new System.Drawing.Size(138, 26);
+            this.btndescargar.Size = new System.Drawing.Size(184, 32);
             this.btndescargar.TabIndex = 108;
             this.btndescargar.Text = "Descargar en PDF";
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -412,10 +414,10 @@
             // 
             // txtmontototal
             // 
-            this.txtmontototal.Location = new System.Drawing.Point(200, 465);
-            this.txtmontototal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtmontototal.Location = new System.Drawing.Point(430, 570);
+            this.txtmontototal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmontototal.Name = "txtmontototal";
-            this.txtmontototal.Size = new System.Drawing.Size(72, 20);
+            this.txtmontototal.Size = new System.Drawing.Size(95, 22);
             this.txtmontototal.TabIndex = 107;
             this.txtmontototal.Text = "0";
             // 
@@ -425,17 +427,27 @@
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(113, 465);
+            this.label12.Location = new System.Drawing.Point(314, 570);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 15);
+            this.label12.Size = new System.Drawing.Size(92, 18);
             this.label12.TabIndex = 106;
             this.label12.Text = "Monto Total:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(192, 197);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 58);
+            this.label1.TabIndex = 2;
+            // 
             // frmDetalleCompra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 521);
+            this.ClientSize = new System.Drawing.Size(1443, 630);
             this.Controls.Add(this.btndescargar);
             this.Controls.Add(this.txtmontototal);
             this.Controls.Add(this.label12);
@@ -449,7 +461,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmDetalleCompra";
             this.Text = "frmDetalleCompra";
             this.Load += new System.EventHandler(this.frmDetalleCompra_Load);
@@ -464,8 +476,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private FontAwesome.Sharp.IconButton btnlimpiarbuscador;
@@ -493,5 +503,6 @@
         private FontAwesome.Sharp.IconButton btndescargar;
         private System.Windows.Forms.TextBox txtmontototal;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label1;
     }
 }

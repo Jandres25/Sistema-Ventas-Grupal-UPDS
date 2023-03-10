@@ -179,7 +179,7 @@ namespace CapaDatos
                         }
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
                     obj = new Compra();
                 }
@@ -220,7 +220,7 @@ namespace CapaDatos
                     }
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 oLista = new List<Detalle_Compra>();
             }
