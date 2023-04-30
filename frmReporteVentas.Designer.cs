@@ -234,7 +234,7 @@
             this.Cantidad,
             this.SubTotal});
             this.dgvdata.GridColor = System.Drawing.Color.Black;
-            this.dgvdata.Location = new System.Drawing.Point(162, 257);
+            this.dgvdata.Location = new System.Drawing.Point(187, 239);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
             this.dgvdata.RowHeadersWidth = 51;
@@ -248,7 +248,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(380, 112);
+            this.label1.Location = new System.Drawing.Point(405, 94);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 18);
@@ -261,7 +261,7 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(156, 112);
+            this.label5.Location = new System.Drawing.Point(181, 94);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 18);
@@ -280,7 +280,7 @@
             this.btnbuscarresultado.IconColor = System.Drawing.Color.Black;
             this.btnbuscarresultado.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarresultado.IconSize = 25;
-            this.btnbuscarresultado.Location = new System.Drawing.Point(599, 104);
+            this.btnbuscarresultado.Location = new System.Drawing.Point(624, 86);
             this.btnbuscarresultado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbuscarresultado.Name = "btnbuscarresultado";
             this.btnbuscarresultado.Size = new System.Drawing.Size(97, 35);
@@ -303,7 +303,7 @@
             this.btnlimpiarbuscador.IconColor = System.Drawing.Color.Black;
             this.btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnlimpiarbuscador.IconSize = 25;
-            this.btnlimpiarbuscador.Location = new System.Drawing.Point(794, 200);
+            this.btnlimpiarbuscador.Location = new System.Drawing.Point(819, 182);
             this.btnlimpiarbuscador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnlimpiarbuscador.Name = "btnlimpiarbuscador";
             this.btnlimpiarbuscador.Size = new System.Drawing.Size(88, 38);
@@ -313,7 +313,7 @@
             // 
             // txtbusqueda
             // 
-            this.txtbusqueda.Location = new System.Drawing.Point(396, 206);
+            this.txtbusqueda.Location = new System.Drawing.Point(421, 188);
             this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(249, 22);
@@ -323,7 +323,7 @@
             // 
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(252, 209);
+            this.cbobusqueda.Location = new System.Drawing.Point(277, 191);
             this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(136, 24);
@@ -335,7 +335,7 @@
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(159, 210);
+            this.label11.Location = new System.Drawing.Point(184, 192);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 18);
@@ -354,7 +354,7 @@
             this.btnbuscar.IconColor = System.Drawing.Color.Black;
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 25;
-            this.btnbuscar.Location = new System.Drawing.Point(679, 200);
+            this.btnbuscar.Location = new System.Drawing.Point(704, 182);
             this.btnbuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(88, 38);
@@ -366,7 +366,7 @@
             // 
             this.dtpfin.CustomFormat = "dd/MM/yyyy";
             this.dtpfin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpfin.Location = new System.Drawing.Point(464, 109);
+            this.dtpfin.Location = new System.Drawing.Point(489, 91);
             this.dtpfin.Name = "dtpfin";
             this.dtpfin.Size = new System.Drawing.Size(109, 22);
             this.dtpfin.TabIndex = 120;
@@ -375,7 +375,7 @@
             // 
             this.dtpinicio.CustomFormat = "dd/MM/yyyy";
             this.dtpinicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpinicio.Location = new System.Drawing.Point(251, 110);
+            this.dtpinicio.Location = new System.Drawing.Point(276, 92);
             this.dtpinicio.Name = "dtpinicio";
             this.dtpinicio.Size = new System.Drawing.Size(111, 22);
             this.dtpinicio.TabIndex = 118;
@@ -386,7 +386,7 @@
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(143, 65);
+            this.label10.Location = new System.Drawing.Point(168, 47);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
@@ -400,7 +400,7 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(143, 180);
+            this.label4.Location = new System.Drawing.Point(168, 162);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
@@ -411,7 +411,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 630);
+            this.ClientSize = new System.Drawing.Size(1448, 605);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);

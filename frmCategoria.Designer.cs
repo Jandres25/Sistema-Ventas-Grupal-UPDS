@@ -88,7 +88,7 @@
             this.cboestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboestado.FormattingEnabled = true;
             this.cboestado.Location = new System.Drawing.Point(29, 194);
-            this.cboestado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboestado.Margin = new System.Windows.Forms.Padding(4);
             this.cboestado.Name = "cboestado";
             this.cboestado.Size = new System.Drawing.Size(244, 24);
             this.cboestado.TabIndex = 70;
@@ -96,7 +96,7 @@
             // txtdescripcion
             // 
             this.txtdescripcion.Location = new System.Drawing.Point(29, 129);
-            this.txtdescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(244, 22);
             this.txtdescripcion.TabIndex = 60;
@@ -124,13 +124,13 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 550);
+            this.label1.Size = new System.Drawing.Size(317, 605);
             this.label1.TabIndex = 58;
             // 
             // txtbusqueda
             // 
             this.txtbusqueda.Location = new System.Drawing.Point(922, 49);
-            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(249, 22);
             this.txtbusqueda.TabIndex = 82;
@@ -140,7 +140,7 @@
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
             this.cbobusqueda.Location = new System.Drawing.Point(754, 49);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(136, 24);
             this.cbobusqueda.TabIndex = 81;
@@ -168,7 +168,7 @@
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.label10.Size = new System.Drawing.Size(1089, 72);
+            this.label10.Size = new System.Drawing.Size(1110, 72);
             this.label10.TabIndex = 78;
             this.label10.Text = "Lista de Categorias";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,7 +193,7 @@
             this.EstadoValor,
             this.Estado});
             this.dgvdata.Location = new System.Drawing.Point(325, 107);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -212,7 +212,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.RowTemplate.Height = 28;
-            this.dgvdata.Size = new System.Drawing.Size(1089, 431);
+            this.dgvdata.Size = new System.Drawing.Size(1110, 485);
             this.dgvdata.TabIndex = 77;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
@@ -263,7 +263,7 @@
             // txtindice
             // 
             this.txtindice.Location = new System.Drawing.Point(179, 58);
-            this.txtindice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtindice.Margin = new System.Windows.Forms.Padding(4);
             this.txtindice.Name = "txtindice";
             this.txtindice.Size = new System.Drawing.Size(44, 22);
             this.txtindice.TabIndex = 88;
@@ -273,7 +273,7 @@
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(229, 58);
-            this.txtid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtid.Margin = new System.Windows.Forms.Padding(4);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(44, 22);
             this.txtid.TabIndex = 87;
@@ -393,7 +393,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1422, 550);
+            this.ClientSize = new System.Drawing.Size(1448, 605);
             this.Controls.Add(this.btnlimpiarbuscador);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.btneliminar);

@@ -83,7 +83,7 @@
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(151, 16);
+            this.label10.Location = new System.Drawing.Point(171, 9);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
@@ -98,7 +98,7 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.cbotipodocumento);
             this.groupBox1.Controls.Add(this.txtfecha);
-            this.groupBox1.Location = new System.Drawing.Point(195, 69);
+            this.groupBox1.Location = new System.Drawing.Point(215, 62);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -159,7 +159,7 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtdocproveedor);
-            this.groupBox2.Location = new System.Drawing.Point(663, 69);
+            this.groupBox2.Location = new System.Drawing.Point(683, 62);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -245,7 +245,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(190, 27);
+            this.label2.Location = new System.Drawing.Point(210, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 29);
@@ -267,7 +267,7 @@
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.txtcodproducto);
-            this.groupBox3.Location = new System.Drawing.Point(195, 181);
+            this.groupBox3.Location = new System.Drawing.Point(215, 174);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -449,7 +449,7 @@
             this.Cantidad,
             this.SubTotal,
             this.btneliminar});
-            this.dgvdata.Location = new System.Drawing.Point(211, 294);
+            this.dgvdata.Location = new System.Drawing.Point(231, 287);
             this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
@@ -536,7 +536,7 @@
             // 
             // txttotalpagar
             // 
-            this.txttotalpagar.Location = new System.Drawing.Point(1139, 479);
+            this.txttotalpagar.Location = new System.Drawing.Point(1159, 472);
             this.txttotalpagar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttotalpagar.Name = "txttotalpagar";
             this.txttotalpagar.Size = new System.Drawing.Size(95, 22);
@@ -549,7 +549,7 @@
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(1137, 439);
+            this.label12.Location = new System.Drawing.Point(1157, 432);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(98, 18);
@@ -568,7 +568,7 @@
             this.btnregistrar.IconColor = System.Drawing.Color.SteelBlue;
             this.btnregistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnregistrar.IconSize = 30;
-            this.btnregistrar.Location = new System.Drawing.Point(1139, 532);
+            this.btnregistrar.Location = new System.Drawing.Point(1159, 525);
             this.btnregistrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnregistrar.Name = "btnregistrar";
             this.btnregistrar.Size = new System.Drawing.Size(107, 53);
@@ -590,7 +590,7 @@
             this.btnagregar.IconColor = System.Drawing.Color.ForestGreen;
             this.btnagregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnagregar.IconSize = 40;
-            this.btnagregar.Location = new System.Drawing.Point(1139, 188);
+            this.btnagregar.Location = new System.Drawing.Point(1159, 181);
             this.btnagregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(95, 80);
@@ -605,7 +605,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 630);
+            this.ClientSize = new System.Drawing.Size(1448, 605);
             this.Controls.Add(this.btnregistrar);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.txttotalpagar);
