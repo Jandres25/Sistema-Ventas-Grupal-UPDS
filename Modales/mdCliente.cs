@@ -46,23 +46,6 @@ namespace SistemaVentas.Modales
             }
         }
 
-        private void dgvdata_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int iRow = e.RowIndex;
-            int iColum = e.ColumnIndex;
-
-            if (iRow >= 0 && iColum >= 0)
-            {
-                _Cliente = new Cliente()
-                {
-                    Documento = dgvdata.Rows[iRow].Cells["NroDocumento"].Value.ToString(),
-                    NombreCompleto = dgvdata.Rows[iRow].Cells["NombreCompleto"].Value.ToString()
-                };
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            }
-        }
-
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             string columnafiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
@@ -92,9 +75,21 @@ namespace SistemaVentas.Modales
             }
         }
 
-        private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvdata_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            int iRow = e.RowIndex;
+            int iColum = e.ColumnIndex;
 
+            if (iRow >= 0 && iColum >= 0)
+            {
+                _Cliente = new Cliente()
+                {
+                    Documento = dgvdata.Rows[iRow].Cells["NroDocumento"].Value.ToString(),
+                    NombreCompleto = dgvdata.Rows[iRow].Cells["NombreCompleto"].Value.ToString()
+                };
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
     }
 }

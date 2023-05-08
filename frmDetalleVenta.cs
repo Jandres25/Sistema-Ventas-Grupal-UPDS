@@ -22,10 +22,6 @@ namespace SistemaVentas
         {
             InitializeComponent();
         }
-        private void frmDetalleVenta_Load(object sender, EventArgs e)
-        {
-            txtbusqueda.Select();
-        }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
@@ -45,17 +41,13 @@ namespace SistemaVentas
                 dgvdata.Rows.Clear();
                 foreach (Detalle_Venta dv in oVenta.oDetalle_Venta)
                 {
-                    dgvdata.Rows.Add(new object[] {dv.oProducto.Nombre, dv.PrecioVenta, dv.Cantidad, dv.Subtotal });
+                    dgvdata.Rows.Add(new object[] { dv.oProducto.Nombre, dv.PrecioVenta, dv.Cantidad, dv.Subtotal });
                 }
+
                 txtmontototal.Text = oVenta.MontoTotal.ToString("0.00");
                 txtmontopago.Text = oVenta.MontoPago.ToString("0.00");
                 txtmontocambio.Text = oVenta.MontoCambio.ToString("0.00");
             }
-        }
-
-        private void txtfecha_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnlimpiarbuscador_Click(object sender, EventArgs e)
@@ -70,6 +62,11 @@ namespace SistemaVentas
             txtmontototal.Text = "0.00";
             txtmontopago.Text = "0.00";
             txtmontocambio.Text = "0.00";
+        }
+
+        private void frmDetalleVenta_Load(object sender, EventArgs e)
+        {
+            txtbusqueda.Select();
         }
 
         private void btndescargar_Click(object sender, EventArgs e)

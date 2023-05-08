@@ -34,6 +34,7 @@ namespace CapaDatos
             }
             return idcorrelativo;
         }
+
         public bool RestarStock(int idproducto, int cantidad)
         {
             bool respuesta = true;
@@ -52,7 +53,7 @@ namespace CapaDatos
 
                     respuesta = cmd.ExecuteNonQuery() > 0 ? true : false;
                 }
-                catch
+                catch (Exception)
                 {
                     respuesta = false;
                 }

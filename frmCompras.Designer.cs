@@ -176,14 +176,14 @@
             this.btnbuscarproveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbuscarproveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscarproveedor.ForeColor = System.Drawing.Color.White;
-            this.btnbuscarproveedor.IconChar = FontAwesome.Sharp.IconChar.Searchengin;
+            this.btnbuscarproveedor.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnbuscarproveedor.IconColor = System.Drawing.Color.Black;
             this.btnbuscarproveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscarproveedor.IconSize = 25;
-            this.btnbuscarproveedor.Location = new System.Drawing.Point(205, 66);
+            this.btnbuscarproveedor.Location = new System.Drawing.Point(201, 64);
             this.btnbuscarproveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbuscarproveedor.Name = "btnbuscarproveedor";
-            this.btnbuscarproveedor.Size = new System.Drawing.Size(37, 22);
+            this.btnbuscarproveedor.Size = new System.Drawing.Size(41, 24);
             this.btnbuscarproveedor.TabIndex = 93;
             this.btnbuscarproveedor.UseVisualStyleBackColor = false;
             this.btnbuscarproveedor.Click += new System.EventHandler(this.btnbuscarproveedor_Click);
@@ -204,6 +204,7 @@
             this.txtidproveedor.Size = new System.Drawing.Size(33, 22);
             this.txtidproveedor.TabIndex = 85;
             this.txtidproveedor.Visible = false;
+            this.txtidproveedor.TextChanged += new System.EventHandler(this.txtidproveedor_TextChanged);
             // 
             // label6
             // 
@@ -431,6 +432,7 @@
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
+            this.dgvdata.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);

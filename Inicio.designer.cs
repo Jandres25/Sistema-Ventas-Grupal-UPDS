@@ -316,7 +316,7 @@
             this.contenedor.Location = new System.Drawing.Point(0, 175);
             this.contenedor.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1470, 628);
+            this.contenedor.Size = new System.Drawing.Size(1470, 640);
             this.contenedor.TabIndex = 3;
             // 
             // label2
@@ -364,7 +364,7 @@
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1470, 803);
+            this.ClientSize = new System.Drawing.Size(1470, 815);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.label2);

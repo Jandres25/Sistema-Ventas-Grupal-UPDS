@@ -287,7 +287,7 @@ namespace SistemaVentas
             {
                 var result = MessageBox.Show("Número de compra generada:\n" + numerodocumento + "\n\n¿Desea copiar al portapapeles?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (result == DialogResult.Yes)
-                    Clipboard.SetText(numerodocumento);
+                    Clipboard.SetText(numerodocumento); 
 
                 txtidproveedor.Text = "0";
                 txtdocproveedor.Text = "";
@@ -297,6 +297,11 @@ namespace SistemaVentas
             }
             else
                 MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        private void txtidproveedor_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

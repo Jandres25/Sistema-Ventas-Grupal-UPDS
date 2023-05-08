@@ -378,7 +378,7 @@
             this.Estado.MinimumWidth = 6;
             this.Estado.Name = "Estado";
             this.Estado.ReadOnly = true;
-            this.Estado.Width = 125;
+            this.Estado.Width = 88;
             // 
             // EstadoValor
             // 
@@ -395,7 +395,7 @@
             this.PrecioVenta.MinimumWidth = 6;
             this.PrecioVenta.Name = "PrecioVenta";
             this.PrecioVenta.ReadOnly = true;
-            this.PrecioVenta.Width = 125;
+            this.PrecioVenta.Width = 131;
             // 
             // PrecioCompra
             // 
@@ -403,7 +403,7 @@
             this.PrecioCompra.MinimumWidth = 6;
             this.PrecioCompra.Name = "PrecioCompra";
             this.PrecioCompra.ReadOnly = true;
-            this.PrecioCompra.Width = 125;
+            this.PrecioCompra.Width = 131;
             // 
             // Stock
             // 
@@ -411,7 +411,7 @@
             this.Stock.MinimumWidth = 6;
             this.Stock.Name = "Stock";
             this.Stock.ReadOnly = true;
-            this.Stock.Width = 125;
+            this.Stock.Width = 80;
             // 
             // Categoria
             // 
@@ -419,7 +419,7 @@
             this.Categoria.MinimumWidth = 6;
             this.Categoria.Name = "Categoria";
             this.Categoria.ReadOnly = true;
-            this.Categoria.Width = 125;
+            this.Categoria.Width = 105;
             // 
             // IdCategoria
             // 
@@ -436,7 +436,7 @@
             this.Descripcion.MinimumWidth = 6;
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 150;
+            this.Descripcion.Width = 120;
             // 
             // Nombre
             // 
@@ -444,7 +444,7 @@
             this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 180;
+            this.Nombre.Width = 95;
             // 
             // Codigo
             // 
@@ -452,7 +452,7 @@
             this.Codigo.MinimumWidth = 6;
             this.Codigo.Name = "Codigo";
             this.Codigo.ReadOnly = true;
-            this.Codigo.Width = 150;
+            this.Codigo.Width = 89;
             // 
             // Id
             // 
@@ -470,11 +470,13 @@
             this.btnseleccionar.Name = "btnseleccionar";
             this.btnseleccionar.ReadOnly = true;
             this.btnseleccionar.Text = "Select";
-            this.btnseleccionar.Width = 45;
+            this.btnseleccionar.Width = 20;
             // 
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
+            this.dgvdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvdata.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
